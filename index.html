@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="assets/Logo.svg" alt="AluraGeek">
+    </header>
+    <main>
+        <section id="productos">
+            <h2>Mis Productos:</h2>
+            <div id="cards-container">
+                <div class="card">
+                    <img class="card-image" src="https://farm2.staticflickr.com/1533/26541536141_41abe98db3_z_d.jpg" alt="cheetah">
+                    <p>cheetah en oferta</p>
+                    <p>$ 2</p>
+                    <button><img class="trash-icon" src="assets/trash_icon.png" alt="Eliminar"></button>
+                </div>
+            </div>
+        </section>
+        <section id="agregar-producto">
+            <h2>Agregar Producto:</h2>
+            <form id="product-form">
+                <input type="text" id="nombre" name="nombre" placeholder="nombre..." required>
+                <input type="number" id="precio" name="precio" placeholder="precio..." required>
+                <input type="url" id="imagen" name="imagen" placeholder="imagen..." required>
+                <div class="form-buttons">
+                <button class="form-button" type="submit">Enviar</button>
+                <button class="form-button" type="reset">Limpiar</button>
+                </div>
+                
+            </form>
+        </section>
+    </main>
+    <footer>
+        <img src="assets/Logo.svg" alt="AluraGeek">
+        <p>Desarrollado por Rene Del Moral</p>
+        <p>Alura Latam - 2024</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

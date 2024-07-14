@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #5300C8;
+    text-align: center;
+    padding: 20px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header img, footer img {
+    max-width: 300px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 100;
+    font-style: normal;
+}
+
+#productos, #agregar-producto {
+    flex: 1;
+    margin: 10px;
+}
+
+h2 {
+    color: #000000;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+#cards-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #5D04D9;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    position: relative;
+    box-shadow: -5px 6px 5px #00000069;
+}
+
+.card-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 150px;
+    border-radius: 10px;
+    border: 3px solid #000000;
+}
+
+.card p {
+    text-align: left;
+    color: #ffffff;
+}
+
+.card-price {
+    font-weight: bold;
+}
+
+.card button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.card button img {
+    width: 20px;
+    height: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 30px;
+    border: 3px solid #03318C;
+}
+
+input::placeholder {
+    color: #03318C;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-button {
+    width: 49%;
+    margin: 1px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #03318C;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    border: 3px solid #03318C;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: bold;
+    font-style: normal;
+}
+
+button[type="reset"] {
+    background-color: #ffffff;
+    color: #03318C;
+}
+
+@media (max-width: 425px) {
+    main {
+        flex-direction: column;
+    }
+    
+    #agregar-producto {
+        order: 1;
+    }
+    
+    #productos {
+        order: 2;
+    }
+    
+    #cards-container {
+        flex-direction: column;
+    }
+    
+    .card {
+        width: calc(100% - 20px);
+    }
+}

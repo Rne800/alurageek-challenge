@@ -1,0 +1,29 @@
+{
+  "productos": [
+    {
+      "nombre": "gato",
+      "precio": "10",
+      "imagen": "https://live.staticflickr.com/8750/16386660144_a6c4026657_n.jpg"
+    },
+    {
+      "nombre": "perro",
+      "precio": "20",
+      "imagen": "https://live.staticflickr.com/1923/44926777104_8a6e553a48_n.jpg"
+    },
+    {
+      "nombre": "cheetah",
+      "precio": "80",
+      "imagen": "https://farm2.staticflickr.com/1533/26541536141_41abe98db3_z_d.jpg"
+    },
+    {
+      "nombre": "pajaro",
+      "precio": "5",
+      "imagen": "https://farm4.staticflickr.com/3075/3168662394_7d7103de7d_z_d.jpg"
+    },
+    {
+      "nombre": "ballena",
+      "precio": "200",
+      "imagen": "https://farm9.staticflickr.com/8505/8441256181_4e98d8bff5_z_d.jpg"
+    }
+  ]
+}
